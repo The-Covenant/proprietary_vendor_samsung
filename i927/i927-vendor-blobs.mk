@@ -17,7 +17,8 @@
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
     vendor/samsung/i927/proprietary/libril.so:obj/lib/libril.so \
-    vendor/samsung/i927/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
+    vendor/samsung/i927/proprietary/libsecril-client.so:obj/lib/libsecril-client.so \
+    vendor/samsung/i927/proprietary/cbd:root/sbin/cbd
 
 # HAL
 PRODUCT_COPY_FILES += \
@@ -57,9 +58,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i927/proprietary/bcm4330_sta.bin:system/etc/wifi/bcm4330_sta.bin \
     vendor/samsung/i927/proprietary/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     vendor/samsung/i927/proprietary/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-    vendor/samsung/i927/proprietary/wlandutservice:system/bin/wlandutservice \
-    vendor/samsung/i927/proprietary/macloader:system/bin/macloader \
-    vendor/samsung/i927/proprietary/mfgloader:system/bin/mfgloader \
     vendor/samsung/i927/proprietary/nv_hciattach:system/bin/nv_hciattach
 
 # NVIDIA
@@ -151,8 +149,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i927/proprietary/libsavsff.so:system/lib/libsavsff.so \
     vendor/samsung/i927/proprietary/libsavsmeta.so:system/lib/libsavsmeta.so \
     vendor/samsung/i927/proprietary/libsavsvc.so:system/lib/libsavsvc.so \
-    vendor/samsung/i927/proprietary/libsAMRNB.so:system/lib/libsAMRNB.so \
-    vendor/samsung/i927/proprietary/libsAMRWB.so:system/lib/libsAMRWB.so \
     vendor/samsung/i927/proprietary/libsthmb.so:system/lib/libsthmb.so
 
 PRODUCT_COPY_FILES += \
@@ -176,33 +172,5 @@ PRODUCT_COPY_FILES += \
 
 # Other files
 PRODUCT_COPY_FILES += \
-    vendor/samsung/i927/proprietary/immvibed:system/bin/immvibed \
-    vendor/samsung/i927/proprietary/drexe:system/bin/drexe \
-    vendor/samsung/i927/proprietary/npsmobex:system/bin/npsmobex \
     vendor/samsung/i927/proprietary/nvcpud:system/bin/nvcpud
-
-PRODUCT_COPY_FILES += \
-    vendor/samsung/i927/lpm/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
-    vendor/samsung/i927/lpm/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
-    vendor/samsung/i927/lpm/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
-    vendor/samsung/i927/lpm/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
-    vendor/samsung/i927/lpm/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
-    vendor/samsung/i927/lpm/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
-    vendor/samsung/i927/lpm/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
-    vendor/samsung/i927/lpm/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
-    vendor/samsung/i927/lpm/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
-    vendor/samsung/i927/lpm/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
-    vendor/samsung/i927/lpm/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
-    vendor/samsung/i927/lpm/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
-    vendor/samsung/i927/lpm/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
-    vendor/samsung/i927/lpm/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
-    vendor/samsung/i927/lpm/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
-    vendor/samsung/i927/lpm/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
-    vendor/samsung/i927/lpm/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
-    vendor/samsung/i927/lpm/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
-    vendor/samsung/i927/lpm/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
-    vendor/samsung/i927/lpm/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
-    vendor/samsung/i927/lpm/battery_error.qmg:system/media/battery_error.qmg \
-    vendor/samsung/i927/lpm/chargingwarning.qmg:system/media/chargingwarning.qmg \
-    vendor/samsung/i927/lpm/Disconnected.qmg:system/media/Disconnected.qmg
 
